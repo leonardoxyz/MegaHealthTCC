@@ -1,0 +1,102 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+/>
+
+<app-menu></app-menu> <br />
+
+<ng-container *ngIf="produtos.length == 0">
+  <div class="container">
+
+
+
+    <img class="img_cesta" src="assets/cesta.png" alt="">
+    <div class="center">
+
+      <h2>Seu carrinho está vazio!</h2>
+      <p>Adicione um produto agora</p>
+      <button routerLink="/produtos" class="btn">Adicionar</button>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="produtos.length != 0">
+  <div class="container">
+    <div class="card-table">
+      <div class="cart-product">
+        <table class="table table-responsive">
+          <thead>
+            <tr>
+              <th style="text-align: center">Imagem do produto</th>
+              <th style="text-align: center">Nome do produto</th>
+              <th style="text-align: center">Descrição do produto</th>
+              <th style="text-align: center">Preço do produto</th>
+              <th style="text-align: center">Quantidade do produto</th>
+              <th style="text-align: center">Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <div class="image-product"*ngIf="mudarImagem(produto)">
+                        <img  src="{{produto.urlImage}}{{img}}"/>
+                      </div> -->
+            <tr *ngFor="let item of produtos">
+              <td style="width: 17%" *ngIf="mudarImagem(item)">
+                <img
+                  style="width: 120px"
+                  src="{{ item.urlImage }}{{ img }}"
+                  alt=""
+                />
+              </td>
+              <td style="width: 17%; text-align: center">{{ item.name }}</td>
+              <td style="width: 17%; text-align: center">
+                {{ item.description }}
+              </td>
+              <td style="width: 17%; text-align: center">
+                R$ {{ item.price }}
+              </td>
+              <td style="width: 17%; text-align: center">
+                <!-- <button><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+                                5
+                                <button><i class="fa fa-minus-circle" aria-hidden="true"></i></button> -->
+                {{ quantitys }}
+              </td>
+              <td style="width: 17%; text-align: center">
+                <!-- <button (click)="removeItem(item)" class="btn btn-danger"><i class="fa fa-trash"
+                                        aria-hidden="true"></i></button> -->
+                <button class="btn">
+                  <i class="fa fa-trash" aria-hidden="true" (click)="removerProduto(item)"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3"></td>
+              <td>
+                <button routerLink="/produtos" class="btn btn-danger">
+                  Produtos
+                </button>
+              </td>
+              <td>
+                <button
+                  class="btn btn-success"
+                  routerLink="/confirmar pedido"
+                  (click)="efetuarPedido()"
+                >
+                  Efetuar Pedido
+                </button>
+              </td>
+              <td><strong>Total : R${{totalGeral}} </strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</ng-container>
+
+<div class="footer">
+  <app-footer></app-footer>
+</div>

@@ -1,0 +1,17 @@
+C:\cartUpdate_tcc\MegaHealth_new-main\prjMegaHealth_Back\Service\bin\Release\net6.0\Service.deps.json
+C:\cartUpdate_tcc\MegaHealth_new-main\prjMegaHealth_Back\Service\bin\Release\net6.0\Service.dll
+C:\cartUpdate_tcc\MegaHealth_new-main\prjMegaHealth_Back\Service\bin\Release\net6.0\Service.pdb
+C:\cartUpdate_tcc\MegaHealth_new-main\prjMegaHealth_Back\Service\bin\Release\net6.0\Domain.dll
+C:\cartUpdate_tcc\MegaHealth_new-main\prjMegaHealth_Back\Service\bin\Release\net6.0\Infra.Data.dll
+C:\cartUpdate_tcc\MegaHealth_new-main\prjMegaHealth_Back\Service\bin\Release\net6.0\Domain.pdb
+C:\cartUpdate_tcc\MegaHealth_new-main\prjMegaHealth_Back\Service\bin\Release\net6.0\Infra.Data.pdb
+C:\cartUpdate_tcc\MegaHealth_new-main\prjMegaHealth_Back\Service\obj\Release\net6.0\Service.csproj.AssemblyReference.cache
+C:\cartUpdate_tcc\MegaHealth_new-main\prjMegaHealth_Back\Service\obj\Release\net6.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\cartUpdate_tcc\MegaHealth_new-main\prjMegaHealth_Back\Service\obj\Release\net6.0\Service.AssemblyInfoInputs.cache
+C:\cartUpdate_tcc\MegaHealth_new-main\prjMegaHealth_Back\Service\obj\Release\net6.0\Service.AssemblyInfo.cs
+C:\cartUpdate_tcc\MegaHealth_new-main\prjMegaHealth_Back\Service\obj\Release\net6.0\Service.csproj.CoreCompileInputs.cache
+C:\cartUpdate_tcc\MegaHealth_new-main\prjMegaHealth_Back\Service\obj\Release\net6.0\Service.csproj.CopyComplete
+C:\cartUpdate_tcc\MegaHealth_new-main\prjMegaHealth_Back\Service\obj\Release\net6.0\Service.dll
+C:\cartUpdate_tcc\MegaHealth_new-main\prjMegaHealth_Back\Service\obj\Release\net6.0\refint\Service.dll
+C:\cartUpdate_tcc\MegaHealth_new-main\prjMegaHealth_Back\Service\obj\Release\net6.0\Service.pdb
+C:\cartUpdate_tcc\MegaHealth_new-main\prjMegaHealth_Back\Service\obj\Release\net6.0\ref\Service.dll

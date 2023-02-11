@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "xQZ5wuKbKKyTyVvVpQVMlQAMvMWiuviwObDUW4QLgzqsjTZUL6Z4rcS1DRfrvCi6xtPu8xRcBCmjNJZVPDS02A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Leona\\OneDrive\\Área de Trabalho\\TCC_Repository-main\\prjMegaHealth_Back\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Leona\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.11\\microsoft.netcore.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\Leona\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.11\\microsoft.windowsdesktop.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\Leona\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.11\\microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}

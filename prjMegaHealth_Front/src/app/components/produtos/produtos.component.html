@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<app-menu></app-menu>
+
+<div class="all">
+  <div class="category">
+    <div class="item">
+      <a (click)="filter('')">
+        <img src="assets\produtos.png" alt="">
+        <h4>Todos os Produtos</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a (click)="filter('Ofertas')">
+        <img src="assets/ofertas_2.png" alt="">
+        <h4>Ofertas</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a (click)="filter('Genericos')">
+        <img src="assets/remedios.png" alt="">
+        <h4>Genéricos</h4>
+      </a>
+    </div>
+    <div class="search-box">
+      <input type="text" name="" id="" placeholder="O que está procurando?" [(ngModel)]="searchTerm" (keyup)="search($event)">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </div>
+  </div>
+</div>
+
+<div class="all-product row ">
+  <div class="prod_container col-md-4 " *ngFor="let produto of filterCategory | filter:searchKey:'name'">
+    <div class="product ">
+
+      <div class="image-product"*ngIf="mudarImagem(produto)">
+        <img  src="{{produto.urlImage}}{{img}}"/>
+      </div>
+
+     
+
+      <div class="name-product">
+        <span>{{ produto.name }}</span>
+      </div>
+      <div class="brand">
+        <span>{{ produto.brand }}</span>
+      </div>
+      <div class="quantity">
+        <span>{{ produto.quantity }} Unidades</span>
+      </div>
+      <div class="price">
+        <!-- <span><s>R$89,90</s></span> -->
+        <span class="new-price">R$ {{ produto.price }}</span>
+      </div>
+      <div class="buy">
+        <button (click)="comprar(produto)">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <app-footer></app-footer>
+</div>
